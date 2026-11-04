@@ -249,7 +249,8 @@ def _loudness(args: list[str], filters: list[str], duration: float) -> str:
         "-",
     ]
     out = subprocess.run(probe, capture_output=True, text=True).stderr
-    limiter = ",aresample=44100,alimiter=limit=0.79:attack=1:release=50:level=false"
+    # Limit at 4x oversampling so peaks between samples are caught too, then back to 44.1 kHz.
+    limiter = ",aresample=176400,alimiter=limit=0.78:attack=1:release=50:level=false,aresample=44100"
     try:
         m = json.loads(out[out.rindex("{") : out.rindex("}") + 1])
         measured = f"measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}"
