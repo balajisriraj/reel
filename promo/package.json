@@ -1,0 +1,9 @@
+{
+  "name": "reel-promo",
+  "private": true,
+  "type": "module",
+  "description": "Reel's own film, made in Reel: record the studio in use, then direct and render the film from the clips.",
+  "dependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}

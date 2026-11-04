@@ -1,0 +1,10 @@
+{
+  "name": "reel-renderer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Renders a reel frame by frame from the film engine, and captures screens of a web page.",
+  "dependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}
