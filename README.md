@@ -4,7 +4,9 @@
 
 Reel makes short product films. Show it up to five videos whose look you love, and it measures each one: the cut rhythm, the palette, the motion, the tempo and the type. Then you mix and match, taking the pace from one film, the colour from another and the music from a blend of them all. Tell it what you need to say, with your key messages ranked and the hero message first. Pick a story shape like Three-act, Save the Cat or Problem, agitate, solve, and the director writes every scene to your length and pace. Add your screens, clips, logo and music, scrub the live preview, and render. The score is composed to the cut, builds to your hero message and drops on it.
 
-<!-- film -->
+https://github.com/user-attachments/assets/50f5d2b5-c88c-4850-8c2c-9c6373df8138
+
+<sub>▶ The film, with sound (1 min 45 s), made in Reel. <a href="#the-film">How it was made</a>.</sub>
 
 ## What it shows
 
