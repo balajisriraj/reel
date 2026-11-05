@@ -199,7 +199,8 @@ export class Film {
         const hasText = !!(s.title || s.sub);
         const side = !portrait && hasText;
         const boxW = side ? W * (phone ? 0.36 : 0.6) : W - pad * 2;
-        const boxH = side ? H * 0.78 : hasText ? H * (portrait ? 0.56 : 0.6) : H * 0.8;
+        // A phone on a tall canvas gets more height, so its screen stays readable under the headline.
+        const boxH = side ? H * 0.78 : hasText ? H * (portrait ? (phone ? 0.64 : 0.56) : 0.6) : H * 0.8;
         const chrome = browser ? 44 * u : 0;
         let mw = boxW, mh = mw / ratio + chrome;
         if (mh > boxH) { mh = boxH; mw = (mh - chrome) * ratio; }
